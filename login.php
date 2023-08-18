@@ -1,6 +1,7 @@
 <?php
 	session_start();
-    require('db.php');
+    require('db.php'); 
+    //session for login
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
         header("location: dashboard.php");
         exit;
